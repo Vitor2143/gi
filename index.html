@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giu Fofinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">giu fofinha</h1>
+        
+        <button class="botao" onclick="mostrarGatinhos()"> Clica </button>
+        
+        <div id="gatinhos" class="gatinhos-container oculto">
+            <img src="https://images.unsplash.com/photo-1615789591457-74a63395c990?w=500" alt="Gatinhos abraçados">
+            <p class="legenda">nós</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarGatinhos() {
+            const elemento = document.getElementById('gatinhos');
+            elemento.classList.toggle('oculto');
+        }
+    </script>
+</body>
+</html>
